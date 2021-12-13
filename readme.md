@@ -10,7 +10,7 @@
 
 ## 运行方式
 
-Qt Creator 打开 `proj_snake.pro`；
+Qt Creator 打开 `doudizhu.pro`；
 
 执行 qmake；
 
