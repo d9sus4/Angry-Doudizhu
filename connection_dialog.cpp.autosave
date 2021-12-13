@@ -1,0 +1,21 @@
+#include "connection_dialog.h"
+
+ConnectionDialog::ConnectionDialog(QWidget* parent): QDialog(parent){
+    this->setWindowTitle(tr("リンク、スタート！"));
+    QVBoxLayout *vbox = new QVBoxLayout;
+    
+    QGroupBox *create_or_join = new QGroupBox(tr("连接方式"));
+    QHBoxLayout *hbox = new QHBoxLayout;
+    QRadioButton *create_a_room = new QRadioButton(tr("创建房间"));
+    QRadioButton *join_a_room = new QRadioButton(tr("加入房间"));
+    hbox->addWidget(create_a_room);
+    hbox->addWidget(join_a_room);
+    create_or_join->setLayout(hbox);
+    vbox->addWidget(create_or_join);
+    
+    QGridLayout *grid = new QGridLayout;
+    QLabel *ip
+    
+    this->setLayout(vbox);
+    this->show();
+}
